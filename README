@@ -1,0 +1,25 @@
+INTRODUCTION
+
+This application is intended for collecting chronograph measurements and saving 
+them into to a file for further processing. This is all it does at the moment, 
+although there are plans for extending it's functionality.
+
+The TODO file contains known issues and future plans. The INSTALL file contains 
+installation instructions for various platforms.
+
+
+USAGE
+
+Showrecorder should be fairly easy to use. At the moment there are only four 
+main user interface components, the session menu, shot list, data entry prompt 
+and two buttons to add or delete shots.
+
+The session menu is used to load, save or create a new session. A session is a 
+series of shots where no variables have changed(*), so the measurements should 
+be fairly consistent. If any variable has changed, you should save the current 
+session and create a new one.
+
+(*) The variables include things like draw length, bolt weight or bowstring 
+    weight on a crossbow. For guns it can include things like the amount of 
+    or the type of gunpowder used in a cartridge, or the bullet type.
+

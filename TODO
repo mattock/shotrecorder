@@ -1,0 +1,34 @@
+TODO / KNOWN ISSUES
+
+When "ready", it should be possible to use Shotrecorder to not only store 
+chronograph results, but to analyze them and draw various graphs, such as:
+
+* Relation of arrow/bolt weight to efficiency (and rough estimations based on
+  the collected data)
+* Relation of temperature and bolt velocity
+
+There are a few minor issues and feature wishes:
+
+* Validate input when editing shots
+* Add support for entering weapon and projectile infortmaion into the session
+* Focus to last added or deleted shot, instead of focusing to the end of the
+  list
+* Sort first column (shot #) based on the integer values instead of
+  alphabetical sort (where 10 comes after 1, not after 9 as it should). This
+  should be doable by writing a custom compare method.
+* Verify that Session's enumeration works properly.
+* Implement a "Save file before exit" modal dialog
+* Add support for storing range data in Shot instances
+* Add support for storing other data (e.g. temperature) in Session instances
+* Add dynamic language selection support to srmain.py
+* Add dynamically generated default filename to the "Save session" dialog
+* Add punctuation ("," or ".") verification to the QLineEdit object
+* Refresh the QTableWidget after a cell has been edited
+
+There are also a few larger things that need to be done eventually:
+
+* Isolate the model and view components properly using Qt delegates (=control)
+  components
+* Add support for other classes from the model (see "docs/*.dia")
+* Implement a database storage backend (e.g SQLite) to ease tracking of
+  object dependencies. 

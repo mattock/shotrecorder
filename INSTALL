@@ -1,0 +1,78 @@
+SUPPORTED PLATFORMS
+-------------------
+
+Shotrecorder has been tested on the following platforms:
+
+ * Nokia N900 (Maemo 5)
+ * Ubuntu 11.10 amd64
+
+That said, it should work on pretty much any platform supporting Python and 
+PySide (e.g. Windows, OSX, FreeBSD, Android). If PySide is not available for 
+your platform, porting it to PyQt should be a matter of changing a few import 
+statements.
+
+
+DEPENDENCIES
+------------
+
+To use Shotrecorder you need the following:
+
+ * Python (2.5+)
+ * PySide (Qt bindings for Python)
+ * PySide QtGui (QtGui module binds for Python)
+ * Git (if you want to use development versions)
+
+
+INSTALLATION ON UBUNTU/DEBIAN
+-----------------------------
+
+First you need install the dependencies:
+
+ $ apt-get update
+ $ apt-get install python-pyside.qtgui
+
+Next extract shotrecorder to a directory:
+
+ $ cd <shotrecorder-download-directory>
+ $ tar -zxf shotrecorder-<version>.tar.gz
+
+
+INSTALLATION ON NOKIA N900
+--------------------------
+
+PySide is not available in the default Maemo/Nokia repositories. Fortunately 
+it's fairly easy to add the "extras-devel" repository that has it:
+
+<http://wiki.maemo.org/Extras-devel#How_to_activate_Extras-devel>
+
+Once the repository has been activated, you can follow the generic Ubuntu/Debian 
+instructions (above).
+
+
+INSTALLATION ON WINDOWS
+-----------------------
+
+NOTE: This installation procedure is probably correct, but has not been tested.
+
+First, install Windows versions of Python and PySide:
+
+<http://www.python.org/getit/windows>
+<http://developer.qt.nokia.com/wiki/PySide_Binaries_Windows>
+
+Next extract the shotrecorder-<version>.tar.gz with WinRAR (or your application 
+of choice):
+
+<http://www.rarlab.com>
+
+
+RUNNING
+-------
+
+Running shotrecorder is easy, you just load the included "srmain.py" with the 
+Python interpreter. If you're using the command-line, use something like this:
+
+ $ cd shotrecorder-<version>
+ $ python srmain.py
+
+Alternatively you can launch "srmain.py" from a graphical file manager (e.g. 
+Windows Explorer, Nautilus or Finder.
